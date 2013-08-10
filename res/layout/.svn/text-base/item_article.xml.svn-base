@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/item_backgroud">
+	<TextView 
+		android:id="@+id/titleTV" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:textColor="#07A5E3"
+		android:textSize="17dp" 
+		android:paddingTop="7dp" 
+		android:paddingLeft="8dp" 
+		android:maxLines="2"
+		android:text="13dp"
+		 />
+
+	<TableLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="6dp" >
+		<TableRow>
+		    <TextView 
+				android:id="@+id/infoTV" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:textColor="@color/gray"
+				android:textSize="14dp" 
+				android:layout_margin="2dp"
+				android:layout_marginTop="1dp"
+				android:paddingTop="2dp"
+				android:maxLines="3"
+				android:singleLine="false" 
+				android:text="13dp"
+				android:layout_weight="1"
+				android:bufferType="spannable"
+				/>
+		    <ImageView 
+				android:id="@+id/avatarIV" 
+				android:layout_width="80dp"
+				android:layout_height="80dp" 
+				android:layout_marginRight="3dp"
+				android:paddingBottom="-5dp"
+				android:src="@drawable/icon"
+				android:layout_weight="1"
+				/>
+	   </TableRow>
+	</TableLayout>
+</LinearLayout>

@@ -1,0 +1,1134 @@
+com.feedback.NotificationType -> com.feedback.a:
+    com.feedback.NotificationType AlertDialog -> a
+    com.feedback.NotificationType NotificationBar -> b
+    com.feedback.NotificationType[] a -> c
+    com.feedback.NotificationType[] values() -> values
+    com.feedback.NotificationType valueOf(java.lang.String) -> valueOf
+com.feedback.UMFeedbackService -> com.feedback.b:
+    com.feedback.NotificationType a -> a
+    android.content.Context b -> b
+    boolean c -> c
+    void b(java.lang.String) -> b
+    boolean getHasCheckedReply() -> a
+    void openUmengFeedbackSDK(android.content.Context) -> a
+    void enableNewReplyNotification(android.content.Context,com.feedback.NotificationType) -> a
+    android.content.Context a() -> b
+    void a(java.lang.String) -> a
+com.feedback.a -> com.feedback.e:
+    android.app.AlertDialog a -> a
+    void onClick(android.view.View) -> onClick
+com.feedback.a.a -> com.feedback.b.a:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.util.Date e -> e
+    com.feedback.a.c f -> f
+    com.feedback.a.b g -> g
+    int a(com.feedback.a.a) -> a
+    java.lang.String a() -> a
+    int compareTo(java.lang.Object) -> compareTo
+com.feedback.a.b -> com.feedback.b.d:
+    com.feedback.a.b a -> a
+    com.feedback.a.b b -> b
+    com.feedback.a.b c -> c
+    com.feedback.a.b[] d -> d
+    com.feedback.a.b[] values() -> values
+    com.feedback.a.b valueOf(java.lang.String) -> valueOf
+com.feedback.a.c -> com.feedback.b.e:
+    com.feedback.a.c a -> a
+    com.feedback.a.c b -> b
+    com.feedback.a.c c -> c
+    com.feedback.a.c[] d -> d
+    com.feedback.a.c[] values() -> values
+    com.feedback.a.c valueOf(java.lang.String) -> valueOf
+com.feedback.a.d -> com.feedback.b.b:
+    java.lang.String a -> a
+    com.feedback.a.e b -> b
+    java.lang.String c -> c
+    com.feedback.a.a d -> d
+    com.feedback.a.a e -> e
+    java.util.List f -> f
+    int a(com.feedback.a.d) -> a
+    com.feedback.a.a a(int) -> a
+    void b(int) -> b
+    int compareTo(java.lang.Object) -> compareTo
+com.feedback.a.e -> com.feedback.b.c:
+    com.feedback.a.e a -> a
+    com.feedback.a.e b -> b
+    com.feedback.a.e c -> c
+    com.feedback.a.e[] d -> d
+    com.feedback.a.e[] values() -> values
+    com.feedback.a.e valueOf(java.lang.String) -> valueOf
+com.feedback.b -> com.feedback.d:
+    android.app.AlertDialog a -> a
+    void onClick(android.view.View) -> onClick
+com.feedback.b.a -> com.feedback.a.c:
+    void a(android.content.Context) -> a
+    void a(android.content.Context,com.feedback.a.d) -> a
+    void b(android.content.Context) -> b
+    void b(android.content.Context,com.feedback.a.d) -> b
+com.feedback.b.b -> com.feedback.a.d:
+    java.lang.String a(org.json.JSONObject,java.lang.String) -> a
+    org.json.JSONObject a(android.content.Context,java.lang.String,int,int) -> a
+    org.json.JSONObject a(android.content.Context,java.lang.String,java.lang.String) -> a
+    boolean b(org.json.JSONObject) -> a
+    boolean c(org.json.JSONObject) -> b
+    boolean d(org.json.JSONObject) -> c
+    boolean e(org.json.JSONObject) -> d
+    boolean f(org.json.JSONObject) -> e
+    boolean a(org.json.JSONObject,java.lang.String,java.lang.String) -> a
+com.feedback.b.c -> com.feedback.a.a:
+    boolean a(android.content.Context,org.json.JSONObject) -> a
+    java.lang.String a(android.content.Context,org.json.JSONArray) -> a
+    java.lang.String c(android.content.Context,java.lang.String) -> c
+    boolean a(android.content.Context,com.feedback.a.d) -> a
+    java.util.List a(android.content.Context) -> a
+    void a(android.content.Context,java.lang.String) -> a
+    void b(android.content.Context,org.json.JSONObject) -> b
+    void c(android.content.Context,org.json.JSONObject) -> c
+    void a(android.content.SharedPreferences,java.lang.String,java.lang.String) -> a
+    void a(android.content.Context,java.lang.String,java.lang.String) -> a
+    void a(android.content.Context,com.feedback.a.d,int) -> a
+    com.feedback.a.d b(android.content.Context,java.lang.String) -> b
+    com.feedback.a.d b(android.content.Context,java.lang.String,java.lang.String) -> b
+    void a(android.content.Context,java.lang.String,boolean) -> a
+com.feedback.b.d -> com.feedback.a.b:
+    boolean a(java.lang.String) -> a
+    java.lang.String a(java.util.Date,android.content.Context) -> a
+    java.lang.String b(java.util.Date,android.content.Context) -> b
+    java.lang.String a(org.json.JSONObject,java.lang.String,java.lang.String) -> a
+    boolean a(java.lang.String,java.lang.String) -> a
+com.feedback.c -> com.feedback.c:
+    void handleMessage(android.os.Message) -> handleMessage
+com.feedback.c.a -> com.feedback.c.c:
+    java.lang.String a -> a
+    org.json.JSONObject b -> b
+    android.content.Context c -> c
+    java.lang.Boolean a() -> a
+    java.lang.Object call() -> call
+com.feedback.c.b -> com.feedback.c.a:
+    java.lang.String a -> a
+    org.json.JSONObject b -> b
+    android.content.Context c -> c
+    void run() -> run
+com.feedback.c.c -> com.feedback.c.b:
+    java.lang.String a -> a
+    android.content.Context b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    int f -> f
+    android.os.Handler g -> g
+    void run() -> run
+com.feedback.ui.FeedbackConversation -> com.feedback.ui.FeedbackConversation:
+    android.content.Context a -> a
+    com.feedback.a.d e -> f
+    com.feedback.ui.c f -> g
+    android.widget.TextView g -> h
+    android.widget.EditText h -> i
+    android.widget.Button i -> j
+    com.feedback.ui.b j -> k
+    boolean b -> b
+    java.lang.String c -> c
+    boolean d -> d
+    java.util.concurrent.ExecutorService executorService -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void a() -> a
+    void onStart() -> onStart
+    void onStop() -> onStop
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void setUserContext(android.content.Context) -> a
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+    com.feedback.a.d a(com.feedback.ui.FeedbackConversation) -> a
+    void a(com.feedback.ui.FeedbackConversation,com.feedback.a.d) -> a
+    com.feedback.ui.c b(com.feedback.ui.FeedbackConversation) -> b
+    android.widget.EditText c(com.feedback.ui.FeedbackConversation) -> c
+com.feedback.ui.FeedbackConversations -> com.feedback.ui.FeedbackConversations:
+    com.feedback.ui.f a -> a
+    android.widget.ImageButton b -> b
+    int[] h -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+    void onRestart() -> onRestart
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    void b() -> b
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    int[] a() -> a
+com.feedback.ui.SendFeedback -> com.feedback.ui.SendFeedback:
+    android.widget.Spinner b -> b
+    android.widget.Spinner c -> c
+    android.widget.EditText d -> d
+    android.widget.TextView e -> e
+    android.widget.TextView f -> f
+    android.widget.ImageButton g -> g
+    org.json.JSONObject h -> h
+    boolean a -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void a() -> a
+    void b() -> b
+    void c() -> c
+    int d() -> d
+    int e() -> e
+    android.widget.EditText a(com.feedback.ui.SendFeedback) -> a
+    android.widget.Spinner b(com.feedback.ui.SendFeedback) -> b
+    android.widget.Spinner c(com.feedback.ui.SendFeedback) -> c
+    void a(com.feedback.ui.SendFeedback,org.json.JSONObject) -> a
+    org.json.JSONObject d(com.feedback.ui.SendFeedback) -> d
+com.feedback.ui.ThreadView -> com.feedback.ui.ThreadView:
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+com.feedback.ui.a -> com.feedback.ui.f:
+    com.feedback.ui.FeedbackConversation a -> a
+    void onClick(android.view.View) -> onClick
+com.feedback.ui.b -> com.feedback.ui.e:
+    com.feedback.ui.FeedbackConversation a -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.feedback.ui.c -> com.feedback.ui.h:
+    android.content.Context a -> a
+    android.view.LayoutInflater b -> b
+    java.lang.String d -> c
+    com.feedback.a.d e -> d
+    int[] f -> e
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    void a(com.feedback.a.a,android.widget.TextView) -> a
+    void a(com.feedback.a.d) -> a
+    int[] a() -> a
+com.feedback.ui.d -> com.feedback.ui.g:
+    android.widget.LinearLayout a -> a
+    android.widget.RelativeLayout b -> b
+    android.widget.TextView c -> c
+    android.widget.TextView d -> d
+    android.view.View e -> e
+    android.view.View f -> f
+    com.feedback.ui.c g -> g
+com.feedback.ui.e -> com.feedback.ui.j:
+    com.feedback.ui.FeedbackConversations a -> a
+    void onClick(android.view.View) -> onClick
+com.feedback.ui.f -> com.feedback.ui.i:
+    com.feedback.ui.g a -> a
+    com.feedback.ui.FeedbackConversations b -> b
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.feedback.ui.g -> com.feedback.ui.b:
+    android.view.LayoutInflater a -> a
+    android.content.Context b -> b
+    java.util.List c -> c
+    java.lang.String f -> d
+    java.lang.String g -> e
+    int h -> f
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    com.feedback.a.d b(int) -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    java.lang.String a(com.feedback.a.d) -> a
+    java.lang.String b(com.feedback.a.d) -> b
+    java.lang.String c(com.feedback.a.d) -> c
+    java.lang.String d(com.feedback.a.d) -> d
+    void a(java.util.List) -> a
+com.feedback.ui.h -> com.feedback.ui.a:
+    android.widget.ImageView a -> a
+    android.widget.TextView b -> b
+    android.widget.TextView c -> c
+    android.widget.TextView d -> d
+    com.feedback.ui.g e -> e
+com.feedback.ui.i -> com.feedback.ui.d:
+    com.feedback.ui.SendFeedback a -> a
+    void onClick(android.view.View) -> onClick
+com.feedback.ui.j -> com.feedback.ui.c:
+    com.feedback.ui.SendFeedback a -> a
+    void onClick(android.view.View) -> onClick
+com.guest.cnbeta.ArticleActivity -> com.guest.cnbeta.ArticleActivity:
+    com.guest.cnbeta.service.ArticleService cbArticleService -> a
+    android.content.Intent intent -> b
+    android.os.Bundle bl -> c
+    com.guest.cnbeta.module.Article article -> d
+    android.webkit.WebView webView -> e
+    android.widget.RelativeLayout footerLayout -> f
+    android.os.Handler handler -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    void syncArticle() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onResume() -> onResume
+    void onPause() -> onPause
+    android.os.Handler access$0(com.guest.cnbeta.ArticleActivity) -> a
+    com.guest.cnbeta.module.Article access$1(com.guest.cnbeta.ArticleActivity) -> b
+    android.webkit.WebView access$2(com.guest.cnbeta.ArticleActivity) -> c
+    void access$3(com.guest.cnbeta.ArticleActivity,android.widget.RelativeLayout) -> a
+    android.widget.RelativeLayout access$4(com.guest.cnbeta.ArticleActivity) -> d
+    com.guest.cnbeta.service.ArticleService access$5(com.guest.cnbeta.ArticleActivity) -> e
+    void access$6(com.guest.cnbeta.ArticleActivity,com.guest.cnbeta.module.Article) -> a
+com.guest.cnbeta.ArticleActivity$1 -> com.guest.cnbeta.c:
+    com.guest.cnbeta.ArticleActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.guest.cnbeta.ArticleActivity$2 -> com.guest.cnbeta.e:
+    com.guest.cnbeta.ArticleActivity this$0 -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    com.guest.cnbeta.ArticleActivity access$0(com.guest.cnbeta.ArticleActivity$2) -> a
+com.guest.cnbeta.ArticleActivity$2$1 -> com.guest.cnbeta.s:
+    com.guest.cnbeta.ArticleActivity$2 this$1 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.guest.cnbeta.ArticleActivity$3 -> com.guest.cnbeta.d:
+    com.guest.cnbeta.ArticleActivity this$0 -> a
+    void run() -> run
+com.guest.cnbeta.CommentActivity -> com.guest.cnbeta.CommentActivity:
+    com.guest.cnbeta.service.CommentService cbCommentService -> c
+    android.content.Intent intent -> d
+    android.os.Bundle bl -> e
+    com.guest.cnbeta.module.Article article -> f
+    java.util.List commentList -> g
+    android.widget.ListView listView -> h
+    java.lang.Boolean isLikeVoted -> i
+    java.lang.Boolean isDisLikeVoted -> j
+    com.guest.cnbeta.CommentActivity$CommentListAdapter listAdapter -> k
+    android.widget.Button postBT -> l
+    android.graphics.Bitmap safeCode -> m
+    android.widget.ImageView imgAddSafeCode -> n
+    android.widget.ProgressBar progressBar -> o
+    com.guest.cnbeta.loadsource.LoadSourceInterface loader -> p
+    com.guest.cnbeta.module.Comment currentComment -> a
+    com.guest.cnbeta.loadsource.LoadSourceInterface loadSource -> b
+    android.os.Handler handler -> q
+    android.os.Handler handler_pc -> r
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void syncPostComment() -> a
+    void syncComment() -> b
+    boolean reloadCommentList() -> c
+    void reloadListView() -> d
+    void syncSafeCode() -> e
+    java.lang.String reloadPostComment() -> f
+    boolean reloadSafeCode() -> g
+    void reloadImageView() -> h
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onResume() -> onResume
+    void onPause() -> onPause
+    com.guest.cnbeta.module.Article access$0(com.guest.cnbeta.CommentActivity) -> a
+    android.widget.ProgressBar access$1(com.guest.cnbeta.CommentActivity) -> b
+    android.widget.ImageView access$2(com.guest.cnbeta.CommentActivity) -> c
+    void access$3(com.guest.cnbeta.CommentActivity,java.lang.Boolean) -> a
+    void access$4(com.guest.cnbeta.CommentActivity,java.lang.Boolean) -> b
+    com.guest.cnbeta.CommentActivity$CommentListAdapter access$5(com.guest.cnbeta.CommentActivity) -> d
+    java.util.List access$6(com.guest.cnbeta.CommentActivity) -> e
+    java.lang.Boolean access$7(com.guest.cnbeta.CommentActivity) -> f
+    java.lang.Boolean access$8(com.guest.cnbeta.CommentActivity) -> g
+    android.widget.Button access$9(com.guest.cnbeta.CommentActivity) -> h
+    android.os.Handler access$10(com.guest.cnbeta.CommentActivity) -> i
+    android.os.Handler access$11(com.guest.cnbeta.CommentActivity) -> j
+com.guest.cnbeta.CommentActivity$1 -> com.guest.cnbeta.z:
+    com.guest.cnbeta.CommentActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.guest.cnbeta.CommentActivity$2 -> com.guest.cnbeta.ab:
+    com.guest.cnbeta.CommentActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.guest.cnbeta.CommentActivity$3 -> com.guest.cnbeta.x:
+    com.guest.cnbeta.CommentActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.guest.cnbeta.CommentActivity$4 -> com.guest.cnbeta.y:
+    com.guest.cnbeta.CommentActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.guest.cnbeta.CommentActivity$5 -> com.guest.cnbeta.v:
+    com.guest.cnbeta.CommentActivity this$0 -> a
+    void run() -> run
+com.guest.cnbeta.CommentActivity$6 -> com.guest.cnbeta.u:
+    com.guest.cnbeta.CommentActivity this$0 -> a
+    void run() -> run
+com.guest.cnbeta.CommentActivity$7 -> com.guest.cnbeta.t:
+    com.guest.cnbeta.CommentActivity this$0 -> a
+    void run() -> run
+com.guest.cnbeta.CommentActivity$CommentListAdapter -> com.guest.cnbeta.a:
+    com.guest.cnbeta.CommentActivity$CommentListAdapter$ViewHolder holder -> a
+    int[] likeVoteNum -> b
+    int[] disLikeVoteNum -> c
+    android.view.LayoutInflater mInflater -> e
+    com.guest.cnbeta.CommentActivity this$0 -> d
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    com.guest.cnbeta.CommentActivity access$0(com.guest.cnbeta.CommentActivity$CommentListAdapter) -> a
+com.guest.cnbeta.CommentActivity$CommentListAdapter$ItemListener -> com.guest.cnbeta.w:
+    int mNumber -> b
+    int mPosition -> c
+    com.guest.cnbeta.module.Comment mComment -> d
+    com.guest.cnbeta.CommentActivity$CommentListAdapter this$1 -> a
+    void onClick(android.view.View) -> onClick
+com.guest.cnbeta.CommentActivity$CommentListAdapter$ViewHolder -> com.guest.cnbeta.g:
+    android.view.View likeView -> a
+    android.view.View dislikeView -> b
+    android.widget.TextView likeTV -> c
+    android.widget.TextView dislikeTV -> d
+    android.widget.TextView authorTV -> e
+    android.widget.TextView contentTV -> f
+    com.guest.cnbeta.CommentActivity$CommentListAdapter this$1 -> g
+com.guest.cnbeta.FirstActivity -> com.guest.cnbeta.FirstActivity:
+    com.guest.cnbeta.util.FlingGallery mGallery -> a
+    android.content.SharedPreferences info -> b
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+    android.content.SharedPreferences access$0(com.guest.cnbeta.FirstActivity) -> a
+com.guest.cnbeta.FirstActivity$GalleryAdapter -> com.guest.cnbeta.b:
+    com.guest.cnbeta.FirstActivity this$0 -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.guest.cnbeta.FirstActivity$GalleryViewItem -> com.guest.cnbeta.aa:
+    int[] backgroundImages -> a
+    com.guest.cnbeta.FirstActivity this$0 -> b
+com.guest.cnbeta.MainActivity -> com.guest.cnbeta.MainActivity:
+    com.guest.cnbeta.service.ListService listService -> b
+    android.widget.ListView listView -> c
+    java.util.List articleList -> d
+    com.guest.cnbeta.MainActivity$ArticleListAdapter listAdapter -> e
+    java.lang.String[] avatarList -> a
+    boolean isRefreshing -> f
+    android.widget.ImageView splashImageView -> g
+    android.app.Dialog dialog -> h
+    com.guest.cnbeta.module.Avatar avatar -> i
+    android.widget.LinearLayout layout -> j
+    android.view.animation.Animation fadeAnim -> k
+    java.lang.Boolean showHeader -> l
+    java.lang.Boolean showFooter -> m
+    java.lang.String url -> n
+    android.os.Handler handler -> o
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean reloadArticleList() -> a
+    boolean syncArticleContent() -> b
+    void reloadListView() -> c
+    void offLineDownload() -> d
+    void syncArticle() -> e
+    void makeCacheDir() -> f
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onResume() -> onResume
+    void onPause() -> onPause
+    boolean access$0(com.guest.cnbeta.MainActivity) -> a
+    android.widget.ImageView access$1(com.guest.cnbeta.MainActivity) -> b
+    android.view.animation.Animation access$2(com.guest.cnbeta.MainActivity) -> c
+    android.widget.LinearLayout access$3(com.guest.cnbeta.MainActivity) -> d
+    android.app.Dialog access$4(com.guest.cnbeta.MainActivity) -> e
+    void access$5(com.guest.cnbeta.MainActivity) -> f
+    com.guest.cnbeta.MainActivity$ArticleListAdapter access$6(com.guest.cnbeta.MainActivity) -> g
+    java.util.List access$7(com.guest.cnbeta.MainActivity) -> h
+    void access$8(com.guest.cnbeta.MainActivity,com.guest.cnbeta.module.Avatar) -> a
+    com.guest.cnbeta.module.Avatar access$9(com.guest.cnbeta.MainActivity) -> i
+    android.os.Handler access$10(com.guest.cnbeta.MainActivity) -> j
+com.guest.cnbeta.MainActivity$1 -> com.guest.cnbeta.j:
+    com.guest.cnbeta.MainActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.guest.cnbeta.MainActivity$2 -> com.guest.cnbeta.k:
+    com.guest.cnbeta.MainActivity this$0 -> a
+    void run() -> run
+com.guest.cnbeta.MainActivity$3 -> com.guest.cnbeta.h:
+    com.guest.cnbeta.MainActivity this$0 -> a
+    java.lang.Thread val$thread -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.guest.cnbeta.MainActivity$4 -> com.guest.cnbeta.i:
+    com.guest.cnbeta.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.guest.cnbeta.MainActivity$5 -> com.guest.cnbeta.n:
+    com.guest.cnbeta.MainActivity this$0 -> a
+    void run() -> run
+com.guest.cnbeta.MainActivity$6 -> com.guest.cnbeta.o:
+    com.guest.cnbeta.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.guest.cnbeta.MainActivity$7 -> com.guest.cnbeta.l:
+    com.guest.cnbeta.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.guest.cnbeta.MainActivity$8 -> com.guest.cnbeta.m:
+    com.guest.cnbeta.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.guest.cnbeta.MainActivity$ArticleListAdapter -> com.guest.cnbeta.f:
+    com.guest.cnbeta.MainActivity$ArticleListAdapter$ViewHolder holder -> a
+    android.view.LayoutInflater mInflater -> c
+    com.guest.cnbeta.MainActivity this$0 -> b
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.guest.cnbeta.MainActivity$ArticleListAdapter$ViewHolder -> com.guest.cnbeta.q:
+    android.widget.ImageView avatarIV -> a
+    android.widget.TextView titleTV -> b
+    android.widget.TextView infoTV -> c
+    com.guest.cnbeta.MainActivity$ArticleListAdapter this$1 -> d
+com.guest.cnbeta.MainActivity$AvatarEngin -> com.guest.cnbeta.p:
+    com.guest.cnbeta.MainActivity this$0 -> a
+    java.lang.String doInBackground(java.lang.String[]) -> a
+    void onCancelled() -> onCancelled
+    void onPostExecute(java.lang.String) -> a
+    void onPreExecute() -> onPreExecute
+    void onProgressUpdate(java.lang.String[]) -> b
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+com.guest.cnbeta.PostCommentActivity -> com.guest.cnbeta.PostCommentActivity:
+    android.content.Intent intent -> a
+    android.os.Bundle bl -> b
+    com.guest.cnbeta.module.Article article -> c
+    android.graphics.Bitmap safeCode -> d
+    com.guest.cnbeta.loadsource.LoadSource loader -> e
+    android.widget.Button postBT -> f
+    android.widget.ImageView imgAddSafeCode -> g
+    android.widget.ProgressBar progressBar -> h
+    android.os.Handler handler_pc -> i
+    android.os.Handler handler -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void syncPostComment() -> a
+    void syncSafeCode() -> b
+    java.lang.String reloadPostComment() -> c
+    boolean reloadSafeCode() -> d
+    void reloadImageView() -> e
+    void onResume() -> onResume
+    void onPause() -> onPause
+    android.widget.ProgressBar access$0(com.guest.cnbeta.PostCommentActivity) -> a
+    android.widget.ImageView access$1(com.guest.cnbeta.PostCommentActivity) -> b
+    android.widget.Button access$2(com.guest.cnbeta.PostCommentActivity) -> c
+    android.os.Handler access$3(com.guest.cnbeta.PostCommentActivity) -> d
+    android.os.Handler access$4(com.guest.cnbeta.PostCommentActivity) -> e
+com.guest.cnbeta.PostCommentActivity$1 -> com.guest.cnbeta.ac:
+    com.guest.cnbeta.PostCommentActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.guest.cnbeta.PostCommentActivity$2 -> com.guest.cnbeta.ad:
+    com.guest.cnbeta.PostCommentActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.guest.cnbeta.PostCommentActivity$3 -> com.guest.cnbeta.ae:
+    com.guest.cnbeta.PostCommentActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.guest.cnbeta.PostCommentActivity$4 -> com.guest.cnbeta.af:
+    com.guest.cnbeta.PostCommentActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.guest.cnbeta.PostCommentActivity$5 -> com.guest.cnbeta.ah:
+    com.guest.cnbeta.PostCommentActivity this$0 -> a
+    void run() -> run
+com.guest.cnbeta.PostCommentActivity$6 -> com.guest.cnbeta.ag:
+    com.guest.cnbeta.PostCommentActivity this$0 -> a
+    void run() -> run
+com.guest.cnbeta.R -> com.guest.cnbeta.R:
+com.guest.cnbeta.R$anim -> com.guest.cnbeta.R$anim:
+    int cycle_7 -> cycle_7
+    int fade -> fade
+    int shake -> shake
+    int slide_in_down -> slide_in_down
+    int slide_in_left -> slide_in_left
+    int slide_in_right -> slide_in_right
+    int slide_in_up -> slide_in_up
+    int slide_out_down -> slide_out_down
+    int slide_out_left -> slide_out_left
+    int slide_out_right -> slide_out_right
+    int slide_out_up -> slide_out_up
+com.guest.cnbeta.R$array -> com.guest.cnbeta.R$array:
+    int UMageList -> UMageList
+    int UMgenderList -> UMgenderList
+com.guest.cnbeta.R$attr -> com.guest.cnbeta.R$attr:
+com.guest.cnbeta.R$color -> com.guest.cnbeta.R$color:
+    int article_bg -> article_bg
+    int background -> background
+    int comment_author -> comment_author
+    int comment_bg -> comment_bg
+    int comment_list_bg -> comment_list_bg
+    int footer -> footer
+    int gray -> gray
+    int screen_background_dark_transparent -> screen_background_dark_transparent
+    int scrolbar -> scrolbar
+com.guest.cnbeta.R$drawable -> com.guest.cnbeta.R$drawable:
+    int arrow -> arrow
+    int bg_pb_small -> bg_pb_small
+    int btn -> btn
+    int btn_pressed -> btn_pressed
+    int comment_divider -> comment_divider
+    int dislike -> dislike
+    int divider -> divider
+    int first1 -> first1
+    int first2 -> first2
+    int header -> header
+    int ic_menu_comment -> ic_menu_comment
+    int ic_menu_download -> ic_menu_download
+    int ic_menu_feedback -> ic_menu_feedback
+    int ic_menu_post -> ic_menu_post
+    int ic_menu_refresh -> ic_menu_refresh
+    int icon -> icon
+    int icon_dialog -> icon_dialog
+    int item -> item
+    int item_backgroud -> item_backgroud
+    int item_pressed -> item_pressed
+    int like -> like
+    int loading_bannar -> loading_bannar
+    int old_umeng_analyse_write_feedback_normal -> old_umeng_analyse_write_feedback_normal
+    int old_umeng_analyse_write_feedback_pressed -> old_umeng_analyse_write_feedback_pressed
+    int pb_splash_small -> pb_splash_small
+    int scrollbar_bg -> scrollbar_bg
+    int scrollbar_vertical_thumb -> scrollbar_vertical_thumb
+    int splash -> splash
+    int splash_land -> splash_land
+    int umeng_analyse_blank_selector -> umeng_analyse_blank_selector
+    int umeng_analyse_bottom_banner -> umeng_analyse_bottom_banner
+    int umeng_analyse_dev_bubble -> umeng_analyse_dev_bubble
+    int umeng_analyse_feedback_bar_bg -> umeng_analyse_feedback_bar_bg
+    int umeng_analyse_feedback_list_item -> umeng_analyse_feedback_list_item
+    int umeng_analyse_feedback_list_item_pressed -> umeng_analyse_feedback_list_item_pressed
+    int umeng_analyse_feedback_list_item_selector -> umeng_analyse_feedback_list_item_selector
+    int umeng_analyse_gradient_green -> umeng_analyse_gradient_green
+    int umeng_analyse_gradient_orange -> umeng_analyse_gradient_orange
+    int umeng_analyse_gray_frame -> umeng_analyse_gray_frame
+    int umeng_analyse_point_new -> umeng_analyse_point_new
+    int umeng_analyse_point_normal -> umeng_analyse_point_normal
+    int umeng_analyse_see_list_normal -> umeng_analyse_see_list_normal
+    int umeng_analyse_see_list_pressed -> umeng_analyse_see_list_pressed
+    int umeng_analyse_see_list_selector -> umeng_analyse_see_list_selector
+    int umeng_analyse_submit_selector -> umeng_analyse_submit_selector
+    int umeng_analyse_top_banner -> umeng_analyse_top_banner
+    int umeng_analyse_user_bubble -> umeng_analyse_user_bubble
+    int umeng_analyse_write_feedback_normal -> umeng_analyse_write_feedback_normal
+    int umeng_analyse_write_feedback_pressed -> umeng_analyse_write_feedback_pressed
+    int umeng_analyse_write_feedback_selector -> umeng_analyse_write_feedback_selector
+com.guest.cnbeta.R$id -> com.guest.cnbeta.R$id:
+    int BtnAddPost -> BtnAddPost
+    int EdtAddComment0 -> EdtAddComment0
+    int EdtAddValimg -> EdtAddValimg
+    int ImgAddSafeCode -> ImgAddSafeCode
+    int LstComment -> LstComment
+    int TxtArtTitle -> TxtArtTitle
+    int WebArtContent -> WebArtContent
+    int authorTV -> authorTV
+    int avatarIV -> avatarIV
+    int contentTV -> contentTV
+    int dislike -> dislike
+    int dislikeTV -> dislikeTV
+    int footer -> footer
+    int footerTV -> footerTV
+    int infoTV -> infoTV
+    int like -> like
+    int likeTV -> likeTV
+    int list -> list
+    int loadingPB -> loadingPB
+    int pull_to_load_image -> pull_to_load_image
+    int pull_to_load_text -> pull_to_load_text
+    int safeCodePB -> safeCodePB
+    int scrollView -> scrollView
+    int splashIV -> splashIV
+    int splashLL -> splashLL
+    int splashTV -> splashTV
+    int titleTV -> titleTV
+    int umeng_analyse_app -> umeng_analyse_app
+    int umeng_analyse_appIcon -> umeng_analyse_appIcon
+    int umeng_analyse_atomLinearLayout -> umeng_analyse_atomLinearLayout
+    int umeng_analyse_atom_left_margin -> umeng_analyse_atom_left_margin
+    int umeng_analyse_atom_right_margin -> umeng_analyse_atom_right_margin
+    int umeng_analyse_atomtxt -> umeng_analyse_atomtxt
+    int umeng_analyse_bottom_sub -> umeng_analyse_bottom_sub
+    int umeng_analyse_btnSendFb -> umeng_analyse_btnSendFb
+    int umeng_analyse_bubble -> umeng_analyse_bubble
+    int umeng_analyse_description -> umeng_analyse_description
+    int umeng_analyse_dev_reply -> umeng_analyse_dev_reply
+    int umeng_analyse_editTxtFb -> umeng_analyse_editTxtFb
+    int umeng_analyse_exitBtn -> umeng_analyse_exitBtn
+    int umeng_analyse_feedback_age_spinner -> umeng_analyse_feedback_age_spinner
+    int umeng_analyse_feedback_content -> umeng_analyse_feedback_content
+    int umeng_analyse_feedback_conversation_title -> umeng_analyse_feedback_conversation_title
+    int umeng_analyse_feedback_gender_spinner -> umeng_analyse_feedback_gender_spinner
+    int umeng_analyse_feedback_see_list_btn -> umeng_analyse_feedback_see_list_btn
+    int umeng_analyse_feedback_submit -> umeng_analyse_feedback_submit
+    int umeng_analyse_feedback_umeng_title -> umeng_analyse_feedback_umeng_title
+    int umeng_analyse_feedbackpreview -> umeng_analyse_feedbackpreview
+    int umeng_analyse_imgBtn_submitFb -> umeng_analyse_imgBtn_submitFb
+    int umeng_analyse_new_dev_reply_box -> umeng_analyse_new_dev_reply_box
+    int umeng_analyse_new_reply_alert_title -> umeng_analyse_new_reply_alert_title
+    int umeng_analyse_new_reply_notifier -> umeng_analyse_new_reply_notifier
+    int umeng_analyse_notification -> umeng_analyse_notification
+    int umeng_analyse_progress_bar -> umeng_analyse_progress_bar
+    int umeng_analyse_progress_text -> umeng_analyse_progress_text
+    int umeng_analyse_rootId -> umeng_analyse_rootId
+    int umeng_analyse_see_detail_btn -> umeng_analyse_see_detail_btn
+    int umeng_analyse_stateOrTime -> umeng_analyse_stateOrTime
+    int umeng_analyse_state_or_date -> umeng_analyse_state_or_date
+    int umeng_analyse_title -> umeng_analyse_title
+    int umeng_analyse_um_feedbacklist_title -> umeng_analyse_um_feedbacklist_title
+com.guest.cnbeta.R$layout -> com.guest.cnbeta.R$layout:
+    int article -> article
+    int dialog_refresh -> dialog_refresh
+    int first -> first
+    int item_article -> item_article
+    int item_comment -> item_comment
+    int list -> list
+    int list_comment -> list_comment
+    int list_comment_footer -> list_comment_footer
+    int post_comment -> post_comment
+    int umeng_analyse_download_notification -> umeng_analyse_download_notification
+    int umeng_analyse_feedback_atom -> umeng_analyse_feedback_atom
+    int umeng_analyse_feedback_conversation -> umeng_analyse_feedback_conversation
+    int umeng_analyse_feedback_conversation_item -> umeng_analyse_feedback_conversation_item
+    int umeng_analyse_feedback_conversations -> umeng_analyse_feedback_conversations
+    int umeng_analyse_feedback_conversations_item -> umeng_analyse_feedback_conversations_item
+    int umeng_analyse_feedback_list_item -> umeng_analyse_feedback_list_item
+    int umeng_analyse_new_reply_alert_dialog -> umeng_analyse_new_reply_alert_dialog
+    int umeng_analyse_send_feedback -> umeng_analyse_send_feedback
+com.guest.cnbeta.R$string -> com.guest.cnbeta.R$string:
+    int BtnAddPost -> BtnAddPost
+    int BtnIComment -> BtnIComment
+    int BtnMain -> BtnMain
+    int BtnRefComment -> BtnRefComment
+    int BtnRefershSafeCode -> BtnRefershSafeCode
+    int EdtAddCommentComment -> EdtAddCommentComment
+    int UMAppUpdate -> UMAppUpdate
+    int UMBreak_Network -> UMBreak_Network
+    int UMContentTooLong -> UMContentTooLong
+    int UMDeleteFeedback -> UMDeleteFeedback
+    int UMDeleteMsg -> UMDeleteMsg
+    int UMDeleteThread -> UMDeleteThread
+    int UMDialog_InstallAPK -> UMDialog_InstallAPK
+    int UMEmptyFbNotAllowed -> UMEmptyFbNotAllowed
+    int UMFbList_ListItem_State_Fail -> UMFbList_ListItem_State_Fail
+    int UMFbList_ListItem_State_ReSend -> UMFbList_ListItem_State_ReSend
+    int UMFbList_ListItem_State_Sending -> UMFbList_ListItem_State_Sending
+    int UMFb_Atom_State_Resend -> UMFb_Atom_State_Resend
+    int UMFb_Atom_State_Sending -> UMFb_Atom_State_Sending
+    int UMFeedbackContent -> UMFeedbackContent
+    int UMFeedbackConversationTitle -> UMFeedbackConversationTitle
+    int UMFeedbackListTitle -> UMFeedbackListTitle
+    int UMFeedbackSummit -> UMFeedbackSummit
+    int UMFeedbackTitle -> UMFeedbackTitle
+    int UMFeedbackUmengTitle -> UMFeedbackUmengTitle
+    int UMGprsCondition -> UMGprsCondition
+    int UMNewReplyAlertTitle -> UMNewReplyAlertTitle
+    int UMNewReplyFlick -> UMNewReplyFlick
+    int UMNewReplyHint -> UMNewReplyHint
+    int UMNewReplyTitle -> UMNewReplyTitle
+    int UMNewVersion -> UMNewVersion
+    int UMNotNow -> UMNotNow
+    int UMResendFeedback -> UMResendFeedback
+    int UMToast_IsUpdating -> UMToast_IsUpdating
+    int UMUpdateNow -> UMUpdateNow
+    int UMUpdateTitle -> UMUpdateTitle
+    int UMUpdatingNow -> UMUpdatingNow
+    int UMViewFeedback -> UMViewFeedback
+    int UMViewThread -> UMViewThread
+    int app_name -> app_name
+    int author -> author
+    int comment -> comment
+    int contentloading -> contentloading
+    int hits_Comment0 -> hits_Comment0
+    int hits_NowName -> hits_NowName
+    int hits_NowSubject -> hits_NowSubject
+    int hits_nowemail -> hits_nowemail
+    int hits_nowpage -> hits_nowpage
+    int menu_addcomment -> menu_addcomment
+    int menu_back -> menu_back
+    int menu_comment -> menu_comment
+    int nointernet -> nointernet
+    int offline -> offline
+    int offlinedownload_start -> offlinedownload_start
+    int pull_to_refresh_pull_label -> pull_to_refresh_pull_label
+    int pull_to_refresh_refreshing_label -> pull_to_refresh_refreshing_label
+    int pull_to_refresh_release_label -> pull_to_refresh_release_label
+    int pull_to_refresh_tap_label -> pull_to_refresh_tap_label
+    int quit -> quit
+    int reload -> reload
+    int retry -> retry
+com.guest.cnbeta.R$style -> com.guest.cnbeta.R$style:
+    int dialog -> dialog
+com.guest.cnbeta.database.ArticleDB -> com.guest.cnbeta.c.a:
+    java.util.List getList() -> a
+    com.guest.cnbeta.module.Article getByFromid(int) -> a
+    void save(com.guest.cnbeta.module.Article) -> a
+com.guest.cnbeta.database.AvatarDB -> com.guest.cnbeta.c.c:
+    java.lang.String getImgByTopic(java.lang.String) -> b
+    void save(com.guest.cnbeta.module.Avatar) -> a
+com.guest.cnbeta.database.BaseDB -> com.guest.cnbeta.c.b:
+    com.guest.cnbeta.database.BaseDBHelper dbHelper -> b
+    android.database.sqlite.SQLiteDatabase db -> a
+    java.lang.String toSafeString(java.lang.String) -> a
+    void close() -> b
+com.guest.cnbeta.database.BaseDBHelper -> com.guest.cnbeta.c.d:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.guest.cnbeta.loadsource.BaseLoadSource -> com.guest.cnbeta.d.a:
+    java.lang.String sessionId -> a
+    java.lang.String getUrlHTML(java.net.URL) -> a
+    java.lang.String getUrlHTML(java.net.URL,java.lang.String) -> a
+    android.graphics.Bitmap getImage(java.net.URL) -> b
+    java.lang.String replaceHTMLJs(java.lang.String) -> a
+com.guest.cnbeta.loadsource.LoadSource -> com.guest.cnbeta.d.b:
+    java.util.List articleList -> b
+    com.guest.cnbeta.module.Article getArticleContent(com.guest.cnbeta.module.Article) -> a
+    java.util.List getComments(com.guest.cnbeta.module.Article) -> b
+    android.graphics.Bitmap getSafeCode() -> a
+    java.lang.String postComments(com.guest.cnbeta.module.Article,java.lang.String,java.lang.String) -> a
+    boolean supportComment(com.guest.cnbeta.module.Comment) -> a
+    boolean againstComment(com.guest.cnbeta.module.Comment) -> b
+    java.util.List getArticleListFromWeb() -> b
+com.guest.cnbeta.loadsource.LoadSourceInterface -> com.guest.cnbeta.d.c:
+    java.util.List getArticleListFromWeb() -> b
+    com.guest.cnbeta.module.Article getArticleContent(com.guest.cnbeta.module.Article) -> a
+    java.util.List getComments(com.guest.cnbeta.module.Article) -> b
+    boolean supportComment(com.guest.cnbeta.module.Comment) -> a
+    boolean againstComment(com.guest.cnbeta.module.Comment) -> b
+    android.graphics.Bitmap getSafeCode() -> a
+    java.lang.String postComments(com.guest.cnbeta.module.Article,java.lang.String,java.lang.String) -> a
+com.guest.cnbeta.module.Article -> com.guest.cnbeta.a.a:
+    int id -> a
+    java.lang.String title -> b
+    java.lang.String topic -> c
+    java.lang.String info -> d
+    java.lang.String content -> e
+    boolean contented -> f
+    boolean isContented() -> a
+    void setContented(boolean) -> a
+    int getId() -> b
+    void setId(int) -> a
+    java.lang.String getContent() -> c
+    void setContent(java.lang.String) -> a
+    java.lang.String getTitle() -> d
+    void setTitle(java.lang.String) -> b
+    java.lang.String getInfo() -> e
+    void setInfo(java.lang.String) -> c
+    java.lang.String getTopic() -> f
+    void setTopic(java.lang.String) -> d
+com.guest.cnbeta.module.Avatar -> com.guest.cnbeta.a.b:
+    java.lang.String topic -> a
+    java.lang.String img -> b
+    com.guest.cnbeta.database.AvatarDB avatarDB -> c
+    java.lang.String getTopic() -> a
+    void setTopic(java.lang.String) -> a
+    java.lang.String getImg() -> b
+    void setImg(java.lang.String) -> b
+    java.lang.String getAvatarImg(com.guest.cnbeta.module.Article) -> a
+    void downloadAvatar(java.lang.String) -> c
+    void closeDB() -> c
+com.guest.cnbeta.module.Comment -> com.guest.cnbeta.a.c:
+    int id -> a
+    int number -> b
+    java.lang.String author -> c
+    java.util.Date date -> d
+    java.lang.String comment -> e
+    int like -> f
+    int dislike -> g
+    int getId() -> a
+    void setId(int) -> a
+    void setNumber(int) -> b
+    java.lang.String getAuthor() -> b
+    void setAuthor(java.lang.String) -> a
+    java.util.Date getDate() -> c
+    void setDate(java.util.Date) -> a
+    java.lang.String getComment() -> d
+    void setComment(java.lang.String) -> b
+    int getLike() -> e
+    void setLike(int) -> c
+    int getDislike() -> f
+    void setDislike(int) -> d
+    java.lang.String code2string(java.lang.String) -> c
+com.guest.cnbeta.service.ArticleService -> com.guest.cnbeta.b.a:
+    com.guest.cnbeta.loadsource.LoadSourceInterface loadSource -> a
+    com.guest.cnbeta.module.Article getMoreDetail(com.guest.cnbeta.module.Article) -> a
+com.guest.cnbeta.service.BaseService -> com.guest.cnbeta.b.b:
+    android.content.Context context -> a
+    void setContext(android.content.Context) -> a
+com.guest.cnbeta.service.CommentService -> com.guest.cnbeta.b.c:
+    com.guest.cnbeta.loadsource.LoadSourceInterface loadSource -> a
+    java.util.List getCommentList(com.guest.cnbeta.module.Article) -> a
+com.guest.cnbeta.service.ListService -> com.guest.cnbeta.b.d:
+    com.guest.cnbeta.loadsource.LoadSourceInterface loadSource -> a
+    com.guest.cnbeta.database.ArticleDB articleDB -> b
+    void syncArticleToDb() -> a
+    java.util.List getArticleListFromDB() -> b
+    void offLineDownload(android.content.Context) -> b
+com.guest.cnbeta.util.FlingGallery -> com.guest.cnbeta.util.d:
+    int swipe_min_distance -> a
+    int swipe_max_off_path -> b
+    int swipe_threshold_veloicty -> c
+    int mViewPaddingWidth -> d
+    int mAnimationDuration -> e
+    float mSnapBorderRatio -> f
+    boolean mIsGalleryCircular -> g
+    int mGalleryWidth -> h
+    boolean mIsTouched -> i
+    boolean mIsDragging -> j
+    float mCurrentOffset -> k
+    long mScrollTimestamp -> l
+    int mFlingDirection -> m
+    int mCurrentPosition -> n
+    int mCurrentViewNumber -> o
+    android.content.Context mContext -> p
+    android.widget.Adapter mAdapter -> q
+    com.guest.cnbeta.util.FlingGallery$FlingGalleryView[] mViews -> r
+    com.guest.cnbeta.util.FlingGallery$FlingGalleryAnimation mAnimation -> s
+    android.view.GestureDetector mGestureDetector -> t
+    android.view.animation.Interpolator mDecelerateInterpolater -> u
+    int getGalleryCount() -> a
+    int getFirstPosition() -> b
+    int getLastPosition() -> c
+    int getPrevPosition(int) -> a
+    int getNextPosition(int) -> b
+    int getPrevViewNumber(int) -> c
+    int getNextViewNumber(int) -> d
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void setAdapter(android.widget.Adapter) -> a
+    int getViewOffset(int,int) -> a
+    void movePrevious() -> d
+    void moveNext() -> e
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onGalleryTouchEvent(android.view.MotionEvent) -> a
+    void processGesture() -> f
+    void processScrollSnap() -> g
+    android.content.Context access$0(com.guest.cnbeta.util.FlingGallery) -> a
+    android.widget.Adapter access$1(com.guest.cnbeta.util.FlingGallery) -> b
+    int access$2(com.guest.cnbeta.util.FlingGallery,int,int) -> a
+    int access$3(com.guest.cnbeta.util.FlingGallery,int) -> a
+    com.guest.cnbeta.util.FlingGallery$FlingGalleryView[] access$4(com.guest.cnbeta.util.FlingGallery) -> c
+    int access$5(com.guest.cnbeta.util.FlingGallery) -> d
+    android.view.animation.Interpolator access$6(com.guest.cnbeta.util.FlingGallery) -> e
+    int access$7(com.guest.cnbeta.util.FlingGallery,int) -> b
+    boolean access$8(com.guest.cnbeta.util.FlingGallery) -> f
+    boolean access$9(com.guest.cnbeta.util.FlingGallery) -> g
+    void access$10(com.guest.cnbeta.util.FlingGallery,boolean) -> a
+    void access$11(com.guest.cnbeta.util.FlingGallery,int) -> c
+    void access$12(com.guest.cnbeta.util.FlingGallery,boolean) -> b
+    void access$13(com.guest.cnbeta.util.FlingGallery,long) -> a
+    int access$14(com.guest.cnbeta.util.FlingGallery) -> h
+    void access$15(com.guest.cnbeta.util.FlingGallery,float) -> a
+    int access$16(com.guest.cnbeta.util.FlingGallery) -> i
+    long access$17(com.guest.cnbeta.util.FlingGallery) -> j
+    float access$18(com.guest.cnbeta.util.FlingGallery) -> k
+com.guest.cnbeta.util.FlingGallery$FlingGalleryAnimation -> com.guest.cnbeta.util.f:
+    boolean mIsAnimationInProgres -> b
+    int mRelativeViewNumber -> c
+    int mInitialOffset -> d
+    int mTargetOffset -> e
+    int mTargetDistance -> f
+    com.guest.cnbeta.util.FlingGallery this$0 -> a
+    void prepareAnimation(int) -> a
+    void applyTransformation(float,android.view.animation.Transformation) -> applyTransformation
+    boolean getTransformation(long,android.view.animation.Transformation) -> getTransformation
+com.guest.cnbeta.util.FlingGallery$FlingGalleryView -> com.guest.cnbeta.util.c:
+    int mViewNumber -> b
+    android.widget.FrameLayout mParentLayout -> c
+    android.widget.FrameLayout mInvalidLayout -> d
+    android.widget.LinearLayout mInternalLayout -> e
+    android.view.View mExternalView -> f
+    com.guest.cnbeta.util.FlingGallery this$0 -> a
+    void recycleView(int) -> a
+    void setOffset(int,int,int) -> a
+    int getCurrentOffset() -> a
+    void requestFocus() -> b
+com.guest.cnbeta.util.FlingGallery$FlingGestureDetector -> com.guest.cnbeta.util.e:
+    com.guest.cnbeta.util.FlingGallery this$0 -> a
+    boolean onDown(android.view.MotionEvent) -> onDown
+    boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onScroll
+    boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+    void onLongPress(android.view.MotionEvent) -> onLongPress
+    void onShowPress(android.view.MotionEvent) -> onShowPress
+    boolean onSingleTapUp(android.view.MotionEvent) -> onSingleTapUp
+com.guest.cnbeta.util.NetworkStatusReceiver -> com.guest.cnbeta.util.NetworkStatusReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.guest.cnbeta.util.NetworkStatusReceiver$1 -> com.guest.cnbeta.util.g:
+    com.guest.cnbeta.util.NetworkStatusReceiver this$0 -> a
+    android.content.Context val$context -> b
+    void run() -> run
+com.guest.cnbeta.util.ScaleAnimationHelper -> com.guest.cnbeta.util.h:
+    android.content.Context con -> a
+    int order -> b
+    android.view.animation.ScaleAnimation myAnimation_Scale -> c
+    void ScaleOutAnimation(android.view.View) -> a
+    void ScaleInAnimation(android.view.View) -> b
+com.guest.cnbeta.util.Tip -> com.guest.cnbeta.util.a:
+    java.lang.String AppName -> a
+    java.lang.Boolean isTesting -> b
+    void d(java.lang.String) -> a
+com.guest.cnbeta.util.Util -> com.guest.cnbeta.util.b:
+    java.lang.Boolean threadStarted -> a
+    boolean isNetworkAvailable(android.app.Activity) -> a
+    boolean isWifiConnected(android.app.Activity) -> b
+com.mobclick.android.MobclickAgent -> com.a.a.p:
+    com.mobclick.android.MobclickAgent a -> e
+    int b -> f
+    android.content.Context c -> g
+    android.os.Handler d -> h
+    com.mobclick.android.UmengUpdateListener e -> i
+    java.lang.String GPU_VENDER -> a
+    java.lang.String GPU_RENDERER -> b
+    boolean mUpdateOnlyWifi -> c
+    org.json.JSONObject f -> j
+    boolean updateAutoPopup -> d
+    void setUpdateOnlyWifi(boolean) -> a
+    void onPause(android.content.Context) -> a
+    void onResume(android.content.Context) -> b
+    void onError(android.content.Context) -> c
+    void onResume(android.content.Context,java.lang.String,java.lang.String) -> a
+    void update(android.content.Context) -> d
+    java.lang.String a(android.content.Context) -> g
+    void a(android.content.Context,java.lang.String,java.lang.String) -> b
+    void b(android.content.Context) -> h
+    void a(android.content.Context,java.lang.String) -> b
+    void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,int) -> a
+    void b(android.content.Context,java.lang.String) -> c
+    boolean a(android.content.SharedPreferences) -> a
+    java.lang.String a(android.content.Context,java.lang.String,android.content.SharedPreferences) -> a
+    java.lang.String a(android.content.Context,android.content.SharedPreferences) -> a
+    void b(android.content.Context,android.content.SharedPreferences) -> b
+    void c(android.content.Context,android.content.SharedPreferences) -> c
+    void a(android.content.Context,android.content.SharedPreferences,java.lang.String,java.lang.String,int) -> a
+    void c(android.content.Context,java.lang.String) -> d
+    void a(android.content.Context,org.json.JSONObject) -> a
+    void d(android.content.Context,java.lang.String) -> e
+    android.app.AlertDialog b(android.content.Context,java.io.File) -> b
+    void c(android.content.Context,java.io.File) -> c
+    void showUpdateDialog(android.content.Context) -> e
+    android.app.AlertDialog b(android.content.Context,org.json.JSONObject) -> b
+    void c(android.content.Context,org.json.JSONObject) -> c
+    boolean a(java.lang.String,android.content.Context) -> a
+    java.lang.String a(android.content.Context,org.json.JSONObject,java.lang.String,boolean) -> a
+    java.lang.String a(java.io.InputStream) -> a
+    void d(android.content.Context,org.json.JSONObject) -> d
+    org.json.JSONObject e(android.content.Context) -> i
+    void f(android.content.Context) -> j
+    android.content.SharedPreferences g(android.content.Context) -> k
+    android.content.SharedPreferences h(android.content.Context) -> l
+    android.content.SharedPreferences i(android.content.Context) -> m
+    java.lang.String j(android.content.Context) -> n
+    java.lang.String k(android.content.Context) -> o
+    java.lang.String b() -> b
+    java.io.File e(android.content.Context,org.json.JSONObject) -> e
+    android.content.SharedPreferences l(android.content.Context) -> p
+    void e(android.content.Context,java.lang.String) -> f
+    java.lang.String getConfigParams(android.content.Context,java.lang.String) -> a
+    int m(android.content.Context) -> q
+    java.lang.String n(android.content.Context) -> r
+    void updateOnlineConfig(android.content.Context) -> f
+    void f(android.content.Context,java.lang.String) -> g
+    void f(android.content.Context,org.json.JSONObject) -> f
+    com.mobclick.android.MobclickAgent a() -> a
+    void a(com.mobclick.android.MobclickAgent,android.content.Context,org.json.JSONObject) -> a
+    void b(com.mobclick.android.MobclickAgent,android.content.Context,org.json.JSONObject) -> b
+    void c(com.mobclick.android.MobclickAgent,android.content.Context,org.json.JSONObject) -> c
+    void a(com.mobclick.android.MobclickAgent,android.content.Context) -> a
+    void a(com.mobclick.android.MobclickAgent,android.content.Context,java.lang.String,java.lang.String) -> a
+    void a(com.mobclick.android.MobclickAgent,android.content.Context,java.lang.String) -> a
+    void a(com.mobclick.android.MobclickAgent,android.content.Context,java.lang.String,java.lang.String,java.lang.String,int) -> a
+    void a(android.content.Context,java.io.File) -> a
+com.mobclick.android.UmengConstants -> com.a.a.q:
+    boolean enableCacheInUpdate -> a
+    boolean testMode -> b
+    boolean LOCATION_OPEN -> c
+    boolean ACTIVITY_DURATION_OPEN -> d
+    java.lang.String LAST_SEND_TIME -> e
+    java.lang.Object saveOnlineConfigMutex -> f
+    java.lang.String[] APPLOG_URL_LIST -> g
+    java.lang.String[] UPDATE_URL_LIST -> h
+    boolean COMPRESS_DATA -> i
+    java.lang.String UmengFeedbackLog -> j
+com.mobclick.android.UmengUpdateListener -> com.a.a.o:
+    void onUpdateReturned(int) -> a
+com.mobclick.android.UpdateStatus -> com.a.a.e:
+    int Yes -> a
+    int No -> b
+    int NoneWifi -> c
+    int Timeout -> d
+com.mobclick.android.a -> com.a.a.d:
+    android.content.Context a -> a
+    int b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    android.app.Notification g -> g
+    android.app.NotificationManager h -> h
+    int i -> i
+    boolean j -> j
+    boolean k -> k
+    int l -> l
+    android.os.Handler m -> m
+    boolean b() -> a
+    int a(java.lang.String,java.lang.String) -> a
+    void c() -> b
+    void a(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    void b(boolean) -> a
+    void d() -> c
+    void e() -> d
+    boolean f() -> e
+    java.lang.String g() -> f
+    java.lang.String a(java.lang.String,java.lang.String,int) -> a
+    java.lang.String a(com.mobclick.android.a) -> a
+    java.lang.String b(com.mobclick.android.a) -> b
+    android.content.Context c(com.mobclick.android.a) -> c
+    void a(com.mobclick.android.a,boolean) -> a
+    int d(com.mobclick.android.a) -> d
+    boolean e(com.mobclick.android.a) -> e
+    void b(com.mobclick.android.a,boolean) -> b
+com.mobclick.android.b -> com.a.a.c:
+    com.mobclick.android.a a -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.mobclick.android.c -> com.a.a.b:
+    com.mobclick.android.a a -> a
+    void run() -> run
+com.mobclick.android.d -> com.a.a.a:
+    int a -> a
+    int b -> b
+    int c -> c
+com.mobclick.android.e -> com.a.a.i:
+    android.location.LocationManager a -> a
+    android.content.Context b -> b
+    android.location.Location a() -> a
+com.mobclick.android.f -> com.a.a.h:
+    android.content.Context a -> a
+    java.io.File b -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.mobclick.android.g -> com.a.a.g:
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.mobclick.android.h -> com.a.a.f:
+    android.content.Context a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.mobclick.android.i -> com.a.a.l:
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.mobclick.android.j -> com.a.a.m:
+    java.lang.Object a -> a
+    android.content.Context b -> b
+    int c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    java.lang.String f -> f
+    java.lang.String g -> g
+    int h -> h
+    void run() -> run
+com.mobclick.android.k -> com.a.a.j:
+    java.lang.Object a -> a
+    com.mobclick.android.MobclickAgent b -> b
+    android.content.Context c -> c
+    org.json.JSONObject d -> d
+    void run() -> run
+com.mobclick.android.l -> com.a.a.k:
+    java.lang.String a -> a
+    int b -> b
+    void a(android.content.Context) -> a
+    boolean a(android.content.Context,java.lang.String) -> a
+    java.lang.String b(android.content.Context) -> b
+    java.lang.String a(java.lang.String) -> a
+    java.lang.String c(android.content.Context) -> c
+    java.lang.String i(android.content.Context) -> h
+    java.lang.String a() -> a
+    byte[] b(java.lang.String) -> b
+    java.lang.String a(java.util.Date) -> a
+    java.lang.String b() -> b
+    java.util.Date c(java.lang.String) -> c
+    org.json.JSONObject e(android.content.Context) -> d
+    java.lang.String[] f(android.content.Context) -> e
+    java.lang.String g(android.content.Context) -> f
+    android.location.Location j(android.content.Context) -> i
+    boolean h(android.content.Context) -> g
+    int a(android.content.Context,java.lang.String,java.lang.String) -> a
+com.mobclick.android.m -> com.a.a.n:
+    java.lang.String a(android.content.Context) -> a

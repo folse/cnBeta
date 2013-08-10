@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="@color/background"
+	>
+	<ListView 
+		android:id="@+id/list"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:divider="@drawable/divider"
+		android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+		>
+	</ListView>
+	<ImageView 
+		android:id="@+id/splashIV"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:background="@drawable/splash_land">
+	</ImageView>
+	<LinearLayout 
+		android:id="@+id/splashLL"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:paddingTop="350dp"
+		android:gravity="center">
+		<ProgressBar 
+			android:id="@+id/loadingPB" 
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:layout_margin="5dp"
+			android:layout_gravity="center_vertical"
+			style="?android:attr/progressBarStyleInverse"
+			android:indeterminateDrawable="@drawable/pb_splash_small"
+			/>
+		<TextView 
+			android:id="@+id/splashTV"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="正在为您hold住 ..."
+			android:textColor="@android:color/white"
+			android:textSize="18dp"
+			android:gravity="center_horizontal"
+			/>
+	</LinearLayout>
+	
+</FrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:paddingBottom="10dp"
+	android:background="@color/comment_bg">
+
+	<TableLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp">
+			
+		<TableRow>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_margin="6dp"
+				android:paddingLeft="8dp"
+				android:layout_gravity="center_vertical"
+				android:text="请输入验证码："
+				android:textColor="@color/gray"
+				>
+			</TextView>
+			<EditText 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:id="@+id/EdtAddValimg"
+				android:hint="0000" 
+				android:numeric="integer"
+				android:selectAllOnFocus="true"
+				android:layout_margin="3dp"
+				>
+			</EditText>
+			<FrameLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:paddingTop="10dp"
+				android:paddingLeft="6dp"
+				android:layout_weight="0.9"
+				>
+				<ProgressBar 
+					android:id="@+id/safeCodePB"
+					android:layout_width="27dp"
+					android:layout_height="27dp" 
+					android:layout_gravity="center_horizontal"
+					style="?android:attr/progressBarStyleSmall"
+					android:indeterminateDrawable="@drawable/pb_splash_small"
+				/>
+				
+				<ImageView 
+					android:id="@+id/ImgAddSafeCode"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:layout_margin="3dp"
+					android:layout_gravity="center_vertical"
+					>
+				</ImageView>
+			</FrameLayout>
+		</TableRow>
+	</TableLayout>
+	
+	<EditText android:id="@+id/EdtAddComment0"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" 
+		android:layout_margin="6dp"
+		android:singleLine="true"
+		android:hint="评论内容">
+	</EditText>
+	
+	<Button 
+		android:id="@+id/BtnAddPost"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:layout_margin="6dp"
+		android:gravity="center"
+		android:text="发表评论"
+		android:textSize="17sp"
+		android:textColor="@android:color/white"
+		android:background="@drawable/btn"
+		>
+	</Button>
+
+</LinearLayout>

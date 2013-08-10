@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="background">#ECECEC</color>
+   <color name="article_bg">#FCFCFC</color>
+   <color name="comment_list_bg">#E4EFF6</color>
+   <color name="comment_bg">#FFE57F</color>
+   <color name="comment_author">#336699</color>
+   <color name="scrolbar">#88D9FE</color>
+   <color name="gray">#6D6D6D</color>
+   <color name="footer">#82D9FD</color>
+   <color name="screen_background_dark_transparent">#00000000</color>
+</resources>

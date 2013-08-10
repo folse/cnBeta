@@ -1,0 +1,32 @@
+package com.guest.cnbeta.database;
+
+import android.content.Context;
+import android.database.Cursor;
+
+import com.guest.cnbeta.module.Avatar;
+
+public class AvatarDB extends BaseDB {
+
+	public AvatarDB(Context context) {
+		super(context);
+	}
+
+	public String getImgByTopic(String topic) {
+		String avatarImg = null;
+		String sql = "SELECT * FROM avatar WHERE topic = '" + topic + "'";
+		Cursor cursor = db.rawQuery(sql, null);
+		cursor.moveToFirst();
+		if (cursor.getCount() >= 1) {
+			avatarImg = cursor.getString(2);
+		}
+		cursor.close();
+		return avatarImg;
+	}
+
+	public void save(Avatar avatar) {
+		String sql = "INSERT INTO avatar (topic, img) VALUES " + "('" + toSafeString(avatar.getTopic())
+				+ "', '" + toSafeString(avatar.getImg()) + "')";
+		db.execSQL(sql);
+	}
+
+}

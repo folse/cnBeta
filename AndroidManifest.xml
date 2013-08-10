@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.guest.cnbeta" android:versionName="2.7"
+	android:versionCode="24">
+	<uses-sdk android:minSdkVersion="5" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.READ_LOGS" />
+	<uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+	<uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar" android:name=".util.BaseApplication">
+		<activity android:name=".FirstActivity" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden|navigation"  android:screenOrientation="portrait" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<receiver android:name=".util.NetworkStatusReceiver"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
+		<activity android:name=".MainActivity" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden|navigation" />
+		<activity android:name=".ArticleActivity" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden|navigation" />
+		<activity android:name=".CommentActivity" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden|navigation" />
+		<activity android:name=".PostCommentActivity" android:theme="@android:style/Theme.Dialog"
+			android:configChanges="orientation|keyboardHidden|navigation" />
+		<activity android:name=".SettingsActivity" android:theme="@android:style/Theme.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden|navigation" />
+			
+		<activity android:name="com.feedback.ui.SendFeedback" android:windowSoftInputMode="adjustResize"></activity>  
+		<activity android:name="com.feedback.ui.FeedbackConversations"></activity>  
+		<activity android:name="com.feedback.ui.FeedbackConversation" android:configChanges="keyboard"></activity>
+		
+		<activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"></activity>
+			
+	<meta-data android:value="4eb668ef5270150941000020" android:name="UMENG_APPKEY" />
+	<meta-data android:value="Umeng" android:name="UMENG_CHANNEL" />
+	</application>
+	<supports-screens android:resizeable="true"
+                  android:smallScreens="true"
+                  android:normalScreens="true"
+                  android:largeScreens="true"
+                  android:xlargeScreens="true"
+                  android:anyDensity="true"/>
+</manifest> 

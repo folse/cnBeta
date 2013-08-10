@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="BtnRefershSafeCode">Refersh</string>
+    <string name="hits_Comment0">Comment</string>
+    <string name="hits_NowSubject">Subject</string>
+    <string name="hits_NowName">Name</string>
+    <string name="hits_nowemail">Email</string>
+    <string name="hits_nowpage">Website</string>
+    <string name="EdtAddCommentComment">mark</string>
+    <string name="BtnAddPost">Post</string>
+    <string name="BtnRefComment">Refersh</string>
+    <string name="BtnIComment">Post Comment</string>
+    <string name="menu_back">Back</string>
+    <string name="menu_addcomment">Post Comment</string>
+    <string name="menu_comment">Comments</string>
+    <string name="contentloading">loading...</string>
+    <string name="nointernet">Internet disconnect!</string>
+    <string name="retry">Retry</string>
+    <string name="comment">Comment:</string>
+    <string name="author">Author:</string>
+    <string name="reload">Reload</string>
+    <string name="quit">Quit</string>
+    <string name="BtnMain">view</string>
+    <string name="app_name">cnBeta</string>
+    <string name="offline">offline</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh</string>
+</resources>

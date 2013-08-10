@@ -1,0 +1,29 @@
+package com.guest.cnbeta.database;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+
+
+public class BaseDB {
+
+	private BaseDBHelper dbHelper;
+	protected SQLiteDatabase db;
+	
+	public BaseDB(Context context) {
+		dbHelper = new BaseDBHelper(context, "cbdb.db", null, 1);
+		db = dbHelper.getWritableDatabase();
+	}
+	
+	protected String toSafeString(String str) {
+		
+		try {
+			str = str.replace("'", "''");
+		} catch (NullPointerException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return str;
+	}
+	
+}

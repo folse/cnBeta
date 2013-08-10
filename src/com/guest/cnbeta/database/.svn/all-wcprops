@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/folse_cb/!svn/ver/26/cnBeta/src/com/guest/cnbeta/database
+END
+BaseDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/folse_cb/!svn/ver/26/cnBeta/src/com/guest/cnbeta/database/BaseDB.java
+END
+BaseDBHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/folse_cb/!svn/ver/11/cnBeta/src/com/guest/cnbeta/database/BaseDBHelper.java
+END
+AvatarDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/folse_cb/!svn/ver/11/cnBeta/src/com/guest/cnbeta/database/AvatarDB.java
+END
+ArticleDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/folse_cb/!svn/ver/27/cnBeta/src/com/guest/cnbeta/database/ArticleDB.java
+END

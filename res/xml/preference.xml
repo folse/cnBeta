@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- <PreferenceCategory android:title="我的位置" android:key="set_local"> -->
+<!--   <CheckBoxPreference  -->
+<!--      android:key="apply_wifi"  -->
+<!--      android:title="使用无线网络"  -->
+<!--      android:summary="使用无线网络在应用程序（例如Google地图）中查看位置" -->
+<!--      android:defaultValue="true" > -->
+<!--   </CheckBoxPreference> -->
+<!--   <CheckBoxPreference  -->
+<!--      android:key="apply_gps"  -->
+<!--      android:title="使用GPS"  -->
+<!--      android:summary="定位到街道级别（需要消耗更多的电量以及天气允许）"> -->
+<!--   </CheckBoxPreference> -->
+<!-- </PreferenceCategory> -->
+
+<CheckBoxPreference
+     android:key="apply_loadImg" 
+     android:title="加载文章图片">
+</CheckBoxPreference>
+
+</PreferenceScreen>

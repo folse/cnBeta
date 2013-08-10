@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scrollView"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/article_bg"
+	android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+	>
+	<LinearLayout 
+		android:orientation="vertical" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/header"
+			>
+				<TextView 
+					android:id="@+id/TxtArtTitle"
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:textColor="@android:color/white"
+					android:textSize="14dp"
+					android:padding="5dp"
+			        android:singleLine="true"
+					>
+				</TextView>
+		</LinearLayout>
+
+		<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="7dp"
+			>
+				<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					>
+					<ImageView 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:layout_margin="15dp"
+						android:background="@drawable/loading_bannar"
+						android:layout_centerInParent="true"
+					>
+					</ImageView>
+				</RelativeLayout>
+				<WebView 
+					android:id="@+id/WebArtContent"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:fitsSystemWindows="true"
+				/>
+		</FrameLayout>
+		
+		<RelativeLayout
+			android:id="@+id/footer"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_margin="7dp"
+			android:visibility="gone"
+			>
+	
+			<ImageView 
+				android:id="@+id/pull_to_load_image"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="70dp"
+				android:background="@drawable/arrow"
+				android:layout_toLeftOf="@+id/footerTV"
+				/>
+	
+			<TextView 
+				android:id="@+id/pull_to_load_text"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_margin="8dip"
+				android:textColor="@color/gray"
+				android:textSize="16dp"
+				android:text="点击查看众喷评论"
+		        android:layout_centerInParent="true"
+				/>
+		</RelativeLayout>
+		
+	</LinearLayout>
+	
+</ScrollView>

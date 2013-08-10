@@ -1,0 +1,170 @@
+﻿package com.guest.cnbeta.loadsource;
+
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import android.graphics.Bitmap;
+
+import com.guest.cnbeta.module.Article;
+import com.guest.cnbeta.module.Comment;
+import com.guest.cnbeta.util.Tip;
+
+public class LoadSource extends BaseLoadSource {
+
+	List<Article> articleList;
+
+	@Override
+	public Article getArticleContent(Article article) throws IOException {
+		
+		try {
+			String html = getUrlHTML(new URL("http://www.cnbeta.com/articles/"
+					+ Integer.toString(article.getId()) + ".htm"), "GB2312");
+			String htmlContent = html.substring(
+					html.indexOf("<div id=\"news_content\">"),
+					html.indexOf("<div class=\"digbox\">"));
+			String contentString = htmlContent.replace("<div id=\"news_content\">",
+					"");
+			article.setContent("<body style=\"color:#686868;font-size:19px;line-height:150%;\">"
+					+ contentString + "</body>");
+			article.setContented(true);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+
+		
+
+		return article;
+	}
+
+	@Override
+	public List<Comment> getComments(Article article) throws IOException {
+		List<Comment> list = new ArrayList<Comment>();
+		URL url = new URL("http://www.cnbeta.com/comment/normal/"
+				+ String.valueOf(article.getId()) + ".html");
+		String html = getUrlHTML(url);
+		String pattern = "(?s)<dt class=\"re_author\"><span><strong>第(\\w*?)楼</strong>\\s*?(.*?)\\s*?发表于\\s*?(.*?)\\s*?</span></dt>.*?<dd class=\"re_detail\">\\s*?(.*?)</dd>.*?ShowReply\\((\\w*?),.*?<span id=\"support\\w*?\">(\\w*?)</span>.*?<span id=\"against\\w*?\">(\\w*?)<";
+		Pattern p = Pattern.compile(pattern);
+		Matcher m = p.matcher(html);
+		while (m.find()) {
+			Comment comment = new Comment();
+			comment.setNumber(Integer.parseInt(m.group(1)));
+			comment.setAuthor(replaceHTMLJs(m.group(2)));
+			SimpleDateFormat dateFormat = new SimpleDateFormat(
+					"yyyy-MM-dd HH:mm:ss");
+			try {
+				comment.setDate(dateFormat.parse(m.group(3)));
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+			comment.setComment(m.group(4).trim().replace("<br>", "\n"));
+			comment.setId(Integer.parseInt(m.group(5)));
+			comment.setLike(Integer.parseInt(m.group(6)));
+			comment.setDislike(Integer.parseInt(m.group(7)));
+			list.add(comment);
+		}
+		return list;
+	}
+
+	@Override
+	public Bitmap getSafeCode() throws IOException {
+		URL url = new URL("http://www.cnbeta.com/validate1.php");
+		return this.getImage(url);
+	}
+
+	@Override
+	public String postComments(Article article, String comment,
+			String valimg_main) throws IOException {
+		URL url = new URL("http://www.cnbeta.com/Ajax.comment.php?ver=new");
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		conn.setDoInput(true);
+		conn.setDoOutput(true);
+		conn.setRequestMethod("POST");
+		conn.setRequestProperty("Cookie", sessionId);
+		conn.setUseCaches(false);
+		conn.setInstanceFollowRedirects(true);
+		conn.setRequestProperty("Content-Type",
+				"application/x-www-form-urlencoded");
+		DataOutputStream out = new DataOutputStream(conn.getOutputStream());
+		String params = "comment=" + URLEncoder.encode(comment, "gb2312")
+				+ "&sid=" + article.getId() + "&tid=0" + "&valimg_main="
+				+ URLEncoder.encode(valimg_main, "gb2312");
+		out.writeBytes(params);
+		out.flush();
+		out.close();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(
+				conn.getInputStream()));
+		String inputLine = null;
+		String resultData = "";
+		while (((inputLine = reader.readLine()) != null)) {
+			resultData += inputLine + "\n";
+		}
+		reader.close();
+		conn.disconnect();
+
+		return resultData;
+	}
+
+	@Override
+	public boolean supportComment(Comment comment) throws IOException {
+		URL url = new URL("http://www.cnbeta.com/Ajax.vote.php?tid="
+				+ comment.getId() + "&support=1");
+		String result = getUrlHTML(url);
+		if (result.substring(0, 1).equals("0")) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	@Override
+	public boolean againstComment(Comment comment) throws IOException {
+
+		Tip.d(Integer.toString(comment.getId()));
+
+		URL url = new URL("http://www.cnbeta.com/Ajax.vote.php?tid="
+				+ comment.getId() + "&against=1");
+		String result = getUrlHTML(url);
+		if (result.substring(0, 1).equals("0")) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	@Override
+	public List<Article> getArticleListFromWeb() throws MalformedURLException,
+			IOException {
+		String xml = getUrlHTML(new URL("http://www.cnbeta.com/backend.php"));
+		articleList = new ArrayList<Article>();
+		Article article;
+
+		String pattern = "(?s)<item>.*?<title>\\<\\!\\[CDATA\\[(.*?)\\]\\]\\></title>.*?<category>\\<\\!\\[CDATA\\[(.*?)\\]\\]\\></category>.*?<description>\\<\\!\\[CDATA\\[(.*?)\\]\\]\\></description>.*?<guid>http://www.cnbeta.com/articles/(\\w*?)\\.htm.*?</item>";
+		Pattern p = Pattern.compile(pattern);
+		Matcher m = p.matcher(xml);
+		while (m.find()) {
+
+			article = new Article();
+			article.setTitle(replaceHTMLJs(m.group(1)));
+			article.setTopic(replaceHTMLJs(m.group(2)));
+			article.setInfo(replaceHTMLJs(m.group(3)));
+			article.setId(Integer.parseInt(m.group(4)));
+			articleList.add(article);
+		}
+
+		return articleList;
+	}
+
+}

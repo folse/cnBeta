@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="BtnRefershSafeCode">刷新验证码</string>
+    <string name="hits_Comment0">您的评论</string>
+    <string name="hits_NowSubject">评论主题</string>
+    <string name="hits_NowName">您的大名</string>
+    <string name="hits_nowemail">您的邮箱</string>
+    <string name="hits_nowpage">您的主页</string>
+    <string name="EdtAddCommentComment">沙发</string>
+    <string name="BtnAddPost">递交</string>
+    <string name="BtnRefComment">刷新评论</string>
+    <string name="BtnIComment">发表评论</string>
+    <string name="menu_back">返回</string>
+    <string name="menu_addcomment">发表评论</string>
+    <string name="menu_comment">查看评论</string>
+    <string name="contentloading">内容加载中...</string>
+    <string name="nointernet">木网络？有离线！</string>
+    <string name="retry">重试</string>
+    <string name="author">作者:</string>
+    <string name="reload">重新加载</string>
+    <string name="comment">评论:</string>
+    <string name="quit">退出</string>
+    <string name="BtnMain">显示</string>
+    <string name="app_name">cnBeta</string>
+    <string name="offline">离线下载</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+</resources>
