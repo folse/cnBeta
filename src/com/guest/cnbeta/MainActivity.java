@@ -136,8 +136,7 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
 
 		getListView().setHeaderDividersEnabled(true);
 
-		if ("off"
-				.equalsIgnoreCase(MobclickAgent.getConfigParams(this, "domob"))) {
+		if ("off".equalsIgnoreCase(MobclickAgent.getConfigParams(this, "domob"))) {
 			dataEngine.setIsDisplayAd(false);
 		} else {
 			dataEngine.setIsDisplayAd(true);
@@ -185,7 +184,6 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
 		}
 		articleListService.offLineDownload(MainActivity.this, articleList);
 		return true;
-
 	}
 
 	public void loadListView() {
@@ -411,11 +409,8 @@ public class MainActivity extends ListActivity implements OnItemClickListener {
 		private class ViewHolder {
 
 			ImageView avatarIV;
-
 			TextView titleTV;
-
 			TextView infoTV;
-
 		}
 	}
 
